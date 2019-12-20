@@ -1,4 +1,4 @@
-cd /home/genome/Desktop/Kawato/181023_bs
+
 python writeoutgeneseq.py sp_list gene_list
 
 for gene in l-rRNA s-rRNA
@@ -46,9 +46,6 @@ trimal \
 -out s-rRNA_nuc_aligned_nogaps.fasta \
 -nogaps
 
-
-
-/home/genome/Desktop/Kawato/181023_bs/nogaps/ATP6_nuc_aligned.fasta_P1_nogaps.ffn.kakusan/RAxML/partitionfinder/RAxML_bestTree.Bs_phylo
 
 
 raxmlHPC-PTHREADS-AVX -T 63 --no-seq-check --no-bfgs -n Bs_phylo -s whole.phy -f d -p 1234 -N 10 -m GTRGAMMA -q partition.file -M
